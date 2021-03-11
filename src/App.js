@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Collapse from './components/collapse/Collapse';
+
+const text = `Давно отверженный блуждал
+В пустыне мира без приюта:
+Вослед за веком век бежал,
+Как за минутою минута,
+Однообразной чередой.
+Ничтожной властвуя землей,
+Он сеял зло без наслажденья,
+Нигде искусству своему\nОн не встречал сопротивленья —
+И зло наскучило ему`
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Collapse text={text}/>
     </div>
   );
 }
